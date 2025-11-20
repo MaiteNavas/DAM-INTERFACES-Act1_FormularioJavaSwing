@@ -197,7 +197,7 @@ public class Principal extends JFrame {
                 //Comprobamos que la edad sea un numero
                 int edadInt;
                 try {
-                    edadInt = Integer.parseInt(edad);  // edad viene de txtEdad.getText()
+                    edadInt = Integer.parseInt(edad); 
                 } catch (NumberFormatException e) {
                     JDialogRegistroErroneo mensajeCampoVacio = new JDialogRegistroErroneo(this,true);
                     mensajeCampoVacio.setVisible(true);
@@ -220,7 +220,7 @@ public class Principal extends JFrame {
                 
                 //Actualizamos el alumno más joven
                 if (alumnoMasJoven == null) {
-                    alumnoMasJoven = alumno; // el primero registrado
+                    alumnoMasJoven = alumno; 
                 } else {
                     for (Alumno alumnoJ : listaAlumnos) {
 
